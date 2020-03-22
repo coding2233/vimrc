@@ -151,4 +151,17 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
 " 关闭clangd
 let g:ycm_use_clangd = 0
+" Go to include/declaration/definition
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" Automatically fix certain errors 修复
+nnoremap <leader>yfi :YcmCompleter FixIt<CR>
+"  Reference finding 引用
+nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
+" Renaming symbols 重命名
+" nnoremap <leader>yrn :YcmCompleter RefactorRename
+" Code formatting
+nnoremap <leader>yf :YcmCompleter Format<CR>
+" Type information for identifiers
+nnoremap <leader>yt :YcmCompleter GetType<CR>
+" View documentation comments for identifiers
+nnoremap <leader>yd :YcmCompleter GetDoc<CR>

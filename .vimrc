@@ -147,5 +147,8 @@ nmap <Leader>tt :NERDTreeToggle<CR>
 nnoremap <Leader>tb :TagbarToggle<CR>
 
 " youcompleteme
-let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
+" 设置ycm的配置文件
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
+" 关闭clangd
+let g:ycm_use_clangd = 0
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>

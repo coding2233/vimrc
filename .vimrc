@@ -33,11 +33,12 @@ Plug 'ycm-core/YouCompleteMe'
 " Syntax checking hacks for vim 
 Plug 'vim-syntastic/syntastic'
 " C++11/C++14 STL 语法高亮
-Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'octol/vim-cpp-enhanced-highlight'
 
 " lldb
 " Plug 'gilligan/vim-lldb'
-Plug 'llvm-mirror/lldb', { 'rtp': 'utils/vim-lldb' }
+" Plug 'llvm-mirror/lldb', { 'rtp': 'utils/vim-lldb' }
+" Plug 'lldb-tools/vim-lldb'
 
 " .h/.cpp 快速切换
 Plug 'derekwyatt/vim-fswitch'
@@ -147,6 +148,8 @@ nmap <leader>scm :Commands<CR>
 
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：toggle tree
 nmap <Leader>tt :NERDTreeToggle<CR>
+" 在最后一个窗口为NERDTree的时候，自动关掉
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：toggle bar
 nnoremap <Leader>tb :TagbarToggle<CR>
 

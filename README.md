@@ -11,3 +11,12 @@ vim配置文件
 * 安装`./install.py ---clang-completer`
 * 复制`.ycm_extra_conf.py`到一个固定目录
 * 修改`.vimrc`的`let g:ycm_gobal_ycm_extra_conf`的路径
+
+
+### 快捷键
+|按键|说明|
+|----|----|
+|Ctrl+O|光标后退|
+|Ctrl+I|光标前进|
+|<leader>cc|注释|
+|<leadercu>|取消注释|

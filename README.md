@@ -20,7 +20,7 @@ vim配置文件
 ### 快捷键
 |按键|说明|
 |----|----|
-|Ctrl+O|光标后退|
-|Ctrl+I|光标前进|
-|<leader>cc|注释|
-|<leadercu>|取消注释|
+|`Ctrl+O`|光标后退|
+|`Ctrl+I`|光标前进|
+|`<leader>cc`|注释|
+|`<leader>cu`|取消注释|

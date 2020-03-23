@@ -1,10 +1,14 @@
 # vimrc
 vim配置文件
 
+### 模糊搜索
+* 先安装`fzf` `pacman -S fzf`
+* vim插件:`/usr/bin/fzf `  `junegunn/fzf.vim`
 
 ### 工程全局搜索
 * [https://github.com/dyng/ctrlsf.vim](https://github.com/dyng/ctrlsf.vim)
 * 安装ack `pacman -S ack`
+* vim插件 `dyng/ctrlsf.vim`
 
 
 ### YouCompleteMe

@@ -35,6 +35,10 @@ Plug 'vim-syntastic/syntastic'
 " C++11/C++14 STL 语法高亮
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+" lldb
+" Plug 'gilligan/vim-lldb'
+Plug 'llvm-mirror/lldb', { 'rtp': 'utils/vim-lldb' }
+
 " .h/.cpp 快速切换
 Plug 'derekwyatt/vim-fswitch'
 

@@ -174,6 +174,6 @@ nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yd :YcmCompleter GetDoc<CR>
 
 " cmake 构建
-nmap <leader>gb :!cmake -DCMAKE_BUILD_TYPE=Denug -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ --build ./build -j 10<CR><CR>:make -C ./build/ -j 10<CR><CR><CR>
+nmap <leader>gb :!cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ --build ./build -j 10<CR><CR>:make -C ./build/ -j 10<CR><CR><CR>
 
 
